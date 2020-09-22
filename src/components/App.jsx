@@ -9,7 +9,7 @@ function App() {
     let time = new Date().toLocaleTimeString();
     setcurrTime(time);
   }
-
+  setInterval(getTime, 1000);
   return (
     <div className="container">
       <h1>{currTime}</h1>
